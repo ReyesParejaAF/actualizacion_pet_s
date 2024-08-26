@@ -1,0 +1,30 @@
+mysql -u root
+
+CREATE DATABASE pet_stylo;
+
+Comandos creacion base de datos con token para recuperar contraseña:
+CREATE TABLE login (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    reset_token VARCHAR(255) DEFAULT NULL,
+    token_expiry DATETIME DEFAULT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+HACER EL EL EMAIL SEA UNICO: 
+ALTER TABLE login ADD UNIQUE (email);
+
+Eliminar las referencias:
+DELETE FROM mascota WHERE id = [id_del_registro_en_login];
+
+Actualizar la restricción:
+ALTER TABLE mascota
+DROP FOREIGN KEY mascota_ibfk_1;
+
+ALTER TABLE mascota
+ADD CONSTRAINT mascota_ibfk_1
+FOREIGN KEY (id) REFERENCES login(id)
+ON DELETE CASCADE;
+

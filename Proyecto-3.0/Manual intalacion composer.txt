@@ -1,0 +1,27 @@
+1. Instalar Composer
+Descarga Composer:
+
+Ve al sitio oficial de Composer: getcomposer.org
+Descarga el instalador de Composer para Windows.
+Instala Composer:
+
+Ejecuta el instalador y sigue las instrucciones. Asegúrate de marcar la opción para agregar Composer a la variable de entorno PATH durante la instalación. Esto permitirá ejecutar el comando composer desde cualquier directorio en la línea de comandos.
+2. Verifica la instalación
+Abre una nueva ventana de la línea de comandos (CMD) y escribe:
+
+bash
+Copiar código
+composer --version
+Deberías ver un mensaje que muestra la versión de Composer instalada, lo que confirma que Composer está instalado correctamente.
+
+3. Instala PHPMailer con Composer
+Navega a la carpeta de tu proyecto C:\xampp\htdocs\Login2.0 usando la línea de comandos:
+
+bash
+Copiar código
+cd C:\xampp\htdocs\Login2.0
+Ahora, ejecuta el comando para instalar PHPMailer:
+
+bash
+Copiar código
+composer require phpmailer/phpmailer

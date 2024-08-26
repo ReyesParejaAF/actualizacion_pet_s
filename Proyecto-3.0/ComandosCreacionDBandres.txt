@@ -1,0 +1,12 @@
+CREATE TABLE citas (
+    id_cita INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_propietario VARCHAR(255) NOT NULL,
+    numero_contacto VARCHAR(15) NOT NULL,
+    nombre_mascota VARCHAR(255) NOT NULL,
+    raza_mascota VARCHAR(255) NOT NULL,
+    servicio VARCHAR(255) NOT NULL,
+    fecha_cita DATE NOT NULL,
+    hora_cita TIME NOT NULL,
+    id_usuario INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id)
+);

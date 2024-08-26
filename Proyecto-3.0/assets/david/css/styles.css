@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lunasima', sans-serif;
+    text-decoration: none;
+}
+
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/gato.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-p{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/imgLog.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*Header*/
+
+header{
+    height: 95px;
+    min-height: 110px;
+}
+
+.fondoHeader{
+    background-color: #70d0df;
+}
+
+.logo{
+    width: 220px;
+}
+
+
+.navbar-collapse {
+    z-index: 1050; /* Asegúrate de que este valor sea mayor que otros elementos de la página */
+}
+
+/*Landing page*/
+
+.seccion1 {
+    background-color: #878481;
+}
+
+.seccion2{
+    background-color: #878481;
+}
+
+.imagenesLanding {
+    width: 300px;
+    height: 300px;
+}
+
+.iconosLanding{
+    width: 100px;
+    height: 100px;
+}
+
+/*Validación contraseña registro*/
+
+.password-rules {
+    margin-top: 10px; /* Reduce el margen superior si es necesario */
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 15px; /* Agrega un poco de padding para mejor visualización */
+    z-index: 1000;
+    width: 80%; /* Ajusta el ancho al 100% del contenedor padre */
+    top: 100%; /* Posición al final del campo de entrada */
+    left: 0;
+}
+
+.password-rules ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.password-rules li {
+    margin-bottom: 5px;
+}
+
+.password-rules .valid {
+    color: green;
+}
+
+.password-rules .invalid {
+    color: red;
+}
+
+/*Bienvenida*/
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    filter: blur(2px);
+}
+
+.card a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+}

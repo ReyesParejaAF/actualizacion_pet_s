@@ -1,0 +1,10 @@
+CREACION TABLA ADMIN:
+CREATE TABLE administradores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    contrasena VARCHAR(255) NOT NULL
+);
+
+INSERTAR DATOS ADMIN:
+INSERT INTO administradores (nombre, correo, contrasena) VALUES ('Administrador', 'admin@example.com', 'hashed_password');

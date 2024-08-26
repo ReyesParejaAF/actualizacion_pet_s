@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo.jpg');
+  }
+  
+  .citas1 {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../img/imgLogin.jpg'); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.1);
+    background-color: #e0f2ff;
+    font-size: 20px;
+  }
+  
+  .citas1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    z-index: -1;
+  }
+  
+  #message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em; 
+    margin-bottom: 20px; 
+    font-family: 'Times New Roman', Times, serif; 
+  }
+  
+  label,
+  h3 {
+    position: relative;
+    z-index: 2;
+    color: #080808; 
+  }
+  
+  label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #0e0d0d;
+    border-radius: 2px;
+    z-index: 2;
+    background-color: rgb(4, 197, 245);
+  }
+  
+  h3 {
+    color: #070707;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos para la lista de citas */
+.citas-lista {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Color blanco claro */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(15, 15, 15, 0.1);
+}
+
+.citas-lista h3 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+}
+
+.citas-lista table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.citas-lista table th, .citas-lista table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.citas-lista table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.citas-lista table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.citas-lista table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.citas-lista a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.citas-lista a:hover {
+  color: #0056b3;
+}
+top-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.top-buttons a:hover {
+  background-color: #0056b3;
+}
